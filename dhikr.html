@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhikr & Dua</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quran.html">Quran</a></li>
+                <li><a href="dhikr.html">Dhikr & Dua</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dhikr & Dua Section -->
+    <section id="dhikr-dua">
+        <h2 class="section-title">Dhikr & Dua</h2>
+        <div class="content">
+            <p>Dhikr (remembrance of Allah) and Dua (supplication) are fundamental practices in Islam that strengthen our connection with Allah and bring peace to our hearts. Engaging in regular Dhikr and making sincere Dua are means of attaining spiritual tranquility and  blessings.</p>
+            <p>We recommend using the <a href="https://lifewithallah.com/app/" target="_blank">Dhikr & Dua App</a>, a comprehensive resource that offers a wide range of supplications and remembrances for daily use.</p>
+            <p>Explore specific sections of the app:</p>
+            <ul>
+                <li><a href="https://lifewithallah.com/dhikr-dua/morning-adhkar/" target="_blank">Morning Adhkar</a></li>
+                <li><a href="https://lifewithallah.com/dhikr-dua/evening-adhkar/" target="_blank">Evening Adhkar</a></li>
+                <li><a href="https://lifewithallah.com/dhikr-dua/duas-from-the-quran/" target="_blank">Duas from the Quran</a></li>
+                <li><a href="https://lifewithallah.com/dhikr-dua/duas-for-difficulties/" target="_blank">Duas for Difficulties</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Dhikr Counter Section -->
+    <section id="dhikr-counter">
+        <h2 class="section-title">Dhikr Counter</h2>
+        <div class="counter-container">
+            <div class="counter-display" id="counter">0</div>
+            <div class="counter-buttons">
+                <button class="increment-button" onclick="incrementCounter()">+1 dhikr</button>
+                <button class="reset-button" onclick="resetCounter()">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+   
+
+    <!-- JavaScript for Dhikr Counter -->
+    <script>
+        let count = 0;
+
+        function incrementCounter() {
+            count++;
+            document.getElementById('counter').innerText = count;
+        }
+
+        function resetCounter() {
+            count = 0;
+            document.getElementById('counter').innerText = count;
+        }
+    </script>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhikr and Adkars Survey</title>
+</head>
+<body>
+    <h1>Dhikr and Adkars Survey</h1>
+    
+    <!-- Form Container -->
+    <div id="form-container"></div>
+
+    <script>
+        // Create the form dynamically using JavaScript
+        function createForm() {
+            const formContainer = document.getElementById("form-container");
+
+            // Create the form element
+            const form = document.createElement("form");
+            form.id = "surveyForm";
+
+            // Add question 1
+            const question1 = document.createElement("label");
+            question1.textContent = "Do you normally make dhikr?";
+            const answer1 = document.createElement("input");
+            answer1.type = "text";
+            answer1.name = "dhikr";
+            answer1.placeholder = "Type your answer here";
+            question1.appendChild(document.createElement("br"));
+            question1.appendChild(answer1);
+            question1.appendChild(document.createElement("br"));
+
+            // Add question 2
+            const question2 = document.createElement("label");
+            question2.textContent = "Do you say your morning and evening adkars?";
+            const answer2 = document.createElement("input");
+            answer2.type = "text";
+            answer2.name = "adkars";
+            answer2.placeholder = "Type your answer here";
+            question2.appendChild(document.createElement("br"));
+            question2.appendChild(answer2);
+            question2.appendChild(document.createElement("br"));
+
+            // Add question 3 (Dropdown menu)
+            const question3 = document.createElement("label");
+            question3.textContent = "Do you think this app will benefit you?";
+            const dropdown = document.createElement("select");
+            dropdown.name = "appBenefit";
+            
+            // Dropdown options
+            const option1 = document.createElement("option");
+            option1.value = "yes";
+            option1.textContent = "Yes";
+            const option2 = document.createElement("option");
+            option2.value = "no";
+            option2.textContent = "No";
+            const option3 = document.createElement("option");
+            option3.value = "maybe";
+            option3.textContent = "Maybe";
+
+            // Append options to the dropdown
+            dropdown.appendChild(option1);
+            dropdown.appendChild(option2);
+            dropdown.appendChild(option3);
+            
+            question3.appendChild(document.createElement("br"));
+            question3.appendChild(dropdown);
+            question3.appendChild(document.createElement("br"));
+
+            // Add a submit button
+            const submitButton = document.createElement("button");
+            submitButton.type = "submit";
+            submitButton.textContent = "Submit";
+
+            // Append all elements to the form
+            form.appendChild(question1);
+            form.appendChild(document.createElement("br"));
+            form.appendChild(question2);
+            form.appendChild(document.createElement("br"));
+            form.appendChild(question3);
+            form.appendChild(document.createElement("br"));
+            form.appendChild(submitButton);
+
+            // Append the form to the container
+            formContainer.appendChild(form);
+
+            // Add form submit event listener
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent default form submission
+                alert("Thank you for filling out the survey!");
+            });
+        }
+
+        // Call the function to create the form
+        createForm();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+ <footer>
+        <p>&copy; 2024 Islamic Resource Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

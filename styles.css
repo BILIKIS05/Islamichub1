@@ -1,0 +1,157 @@
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+
+/* Apply Times New Roman font and double spacing to all text */
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 2;
+}
+
+/* Underline all heading elements */
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: underline;
+}
+
+/* Header Styling */
+header {
+    background-color: #004d40;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #004d40;
+}
+
+.content {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.content img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Dhikr Counter Styling */
+.counter-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.counter-display {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.counter-buttons button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.increment-button {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.reset-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.increment-button:hover {
+    background-color: #0056b3;
+}
+
+.reset-button:hover {
+    background-color: #c82333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.slider {
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+  }
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    min-width: 100%;
+  }
+  .buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  .button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+  }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Resource Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quran.html">Quran</a></li>
+                <li><a href="dhikr.html">Dhikr & Dua</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Islamic Resource Hub</h1>
+            <p>Your gateway to authentic Islamic knowledge and resources.</p>
+            <button onclick="window.location.href='quran.html'">Explore the Quran</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="content">
+            <p>Our mission is to provide accessible and reliable Islamic resources to help you deepen your understanding and practice of Islam. Explore the Quran, Hadith, daily Dhikr, and accurate prayer times tailored for your location.</p>
+        </div>
+    </section>
+
+    <div class="slider">
+  <div class="slides" id="slides">
+    <img src="Quran1.jpg" alt="Quran Image 1" class="slide">
+    <img src="Quran2.jpg" alt="Quran Image 2" class="slide">
+  </div>
+  <div class="buttons">
+    <button class="button" onclick="prevSlide()">❮</button>
+    <button class="button" onclick="nextSlide()">❯</button>
+  </div>
+</div>
+
+<script>
+  let index = 0;
+  function showSlide() {
+    const slides = document.getElementById('slides');
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+  function prevSlide() {
+    index = (index > 0) ? index - 1 : 1; // Adjust index to cycle through slides
+    showSlide();
+  }
+  function nextSlide() {
+    index = (index < 1) ? index + 1 : 0; // Adjust index to cycle through slides
+    showSlide();
+  }
+</script>
+    <!-- Features Section -->
+    <section id="features">
+        <h2 class="section-title">Our Features</h2>
+        <div class="features-container">
+            <div class="feature-box">
+                <h3>Quran</h3>
+                <p>Read and listen to the Holy Quran, with translations and tafsir to enhance your understanding.</p>
+                <a href="quran.html" class="feature-link">Learn More</a>
+            </div>
+            
+            <div class="feature-box">
+                <h3>Dhikr & Dua</h3>
+                <p>Discover daily supplications and remembrances to incorporate into your spiritual routine.</p>
+                <a href="dhikr.html" class="feature-link">Learn More</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Islamic Resource Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
